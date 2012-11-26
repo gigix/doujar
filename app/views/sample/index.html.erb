@@ -1,12 +1,7 @@
-<!doctype html>
-<html lang="en" ng-app>
-<head>
-  <meta charset="utf-8">
-  <title>My HTML File</title>
-</head>
-<body>
- 
-  <p>Nothing here {{'yet' + '!'}}</p>
- 
-</body>
-</html>
+<%= javascript_include_tag "controllers" %>
+
+<ul ng-controller="BookListCtrl">
+	<li ng-repeat="book in books">
+		{{book.title}} ({{book.isbn}})</p>
+	</li>
+</ul>
