@@ -1,3 +1,5 @@
+<%= javascript_include_tag "controllers" %>
+
 <ul ng-controller="BookListCtrl">
 	<li ng-repeat="book in books">
 		{{book.title}} ({{book.isbn}})</p>
