@@ -1,0 +1,36 @@
+.shelf {
+	width: 600px;
+}
+
+.shelf .top {
+	height: 48px;
+	background-image: url(shelf-top.jpg);
+}
+
+.shelf .grid {
+	height: 146px;
+	background-image: url(shelf-grid.jpg);
+	padding-left: 50px;
+}
+
+/*	I don't need bottom at this moment
+.shelf .bottom {
+	height: 145px;
+	background-image: url(shelf-bottom.jpg);
+}
+*/
+
+.shelf ul {
+	display: inline;
+	list-style: none;
+}
+
+.shelf li.book {
+	float: left;
+}
+
+.shelf li.book img {
+	height: 100px;
+	margin: 30px 15px 0 0;
+	-webkit-box-shadow: 2px -2px 10px #333;
+}

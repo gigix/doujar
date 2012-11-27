@@ -1,5 +1,15 @@
-<ul ng-controller="BookListCtrl">
-	<li ng-repeat="book in books">
-		{{book.title}} ({{book.isbn}})
-	</li>
-</ul>
+<div class='shelf'>
+	<div class='top'></div>
+	<div class='grid'>
+		<ul ng-controller="BookShelfCtrl">
+			<li ng-repeat="book in books" class='book'>
+				<a href='http://book.douban.com/subject/{{book.douban_id}}' title='{{book.title}}'>
+					<img src='{{book.cover_url}}' />
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class='grid'></div>
+	<div class='grid'></div>
+	<div class='grid'></div>
+</div>
