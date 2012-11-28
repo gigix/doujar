@@ -4,7 +4,7 @@
 		<ul>
 			<li ng-repeat="book in category.books" class='book'>
 				<a href='http://book.douban.com/subject/{{book.douban_id}}' title='{{book.title}}'>
-					<img src='{{book.cover_url}}' />
+					<div class='title'>{{book.title.substring(0, 7).toUpperCase()}}</div>
 				</a>
 			</li>
 		</ul>
