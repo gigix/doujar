@@ -3,6 +3,9 @@
 
 <ul ng-controller='CollectionsCtrl'>
 	<li ng-repeat='book in books'>
-		{{book.title}}
+		<a href='{{book.url}}' title='{{book.title}}'>
+			<img src='{{book.cover_url}}' />
+			{{book.title}}
+		</a>
 	</li>
 </ul>

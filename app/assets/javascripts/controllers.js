@@ -74,8 +74,8 @@ function CollectionsCtrl($scope, $rootScope, $q) {
 		DOUBAN.getUserCollection({
 		    uid: 'gigix',
 			cat: 'book',
-			startindex: 600,
-			maxresults: 3,
+			startindex: 0,
+			maxresults: 50,
 		    callback: function(collections){
 				var books = [];
 				for(var i=0; i < collections.entry.length; i++) {
@@ -85,6 +85,7 @@ function CollectionsCtrl($scope, $rootScope, $q) {
 						'douban_id': book.nid,
 						'title': book.title,
 						'isbn': book.attribute['isbn13'][0],
+						'url': book.id,
 						'cover_url': book.link.image
 					});
 				}
