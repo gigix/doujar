@@ -1,0 +1,19 @@
+== DONE ==
+
+
+
+== WIP ==
+
+
+
+== TODO ==
+User sign-in (with Douban account)
+Fetch my book list (with paging)
+Mark books I own
+Search books in Douban
+Show books I own in search/list results
+
+Friend relationship (? need to be elaborated)
+Show books my friends own in search/list results
+
+AngularJS test infrastructure
